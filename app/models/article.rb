@@ -15,8 +15,4 @@ class Article < ActiveRecord::Base
   def self.all
     @@all
   end
-
-  def self.all
-    ARTICLES
-  end
 end
