@@ -4,7 +4,7 @@ class Article < ActiveRecord::Base
   #
   attr_reader :title, :content
 
-  ARTICLES = []
+  @@all = []
 
   def initialize(params)
     @title = params[:title]
