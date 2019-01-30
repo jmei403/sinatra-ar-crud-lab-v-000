@@ -13,7 +13,7 @@ class Article < ActiveRecord::Base
   end
 
   def self.all
-    ARTICLES << self
+    @@all
   end
 
   def self.all
