@@ -37,6 +37,8 @@ class ApplicationController < Sinatra::Base
 
   patch '/articles/:id' do
     @article = Article.find(params[:id])
+    @article.title = params[:edited_title]
+    @article.content = params[:edited_content]
 
   end
 end
