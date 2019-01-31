@@ -1,5 +1,5 @@
-<h2>Current Title: <%= @article.title %></h2>
-<h2>Current Content: <%= @article.content %></h2>
+<!-- <h2>Current Title: <%= @article.title %></h2>
+<h2>Current Content: <%= @article.content %></h2> -->
 
 <form method="POST" action="/articles/<%= @article.id %>">
   <input id="hidden" type="hidden" name="_method" value="PATCH">
