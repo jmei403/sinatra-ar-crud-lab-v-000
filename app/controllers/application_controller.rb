@@ -13,6 +13,7 @@ class ApplicationController < Sinatra::Base
 
   get '/articles/new' do
     redirect to "/articles/#{:id}"
+    erb:show
   end
 
   get '/articles/:id' do
