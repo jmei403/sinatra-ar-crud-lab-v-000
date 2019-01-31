@@ -4,8 +4,3 @@
   <label>Enter New Content: <input type="text" name="content" value="<%= @article.content %>"></label><br>
   <input type="submit" id="Submit">
 </form>
-
-<form method="POST" action="/articles/<%= @article.id %>">
-  <input id="hidden" type="hidden" name="_method" value="DELETE">
-  <input type="submit" id="Submit" value="delete">
-</form>
